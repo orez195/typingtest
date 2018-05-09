@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Type Racing Game</title>
+    <style>
+        .testInputs {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #text-box {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        #user-input {
+            width: 300px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #timer {
+            margin-left: 20px;
+            font-size: x-large;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="testInputs">
+        <textarea id="text-box" placeholder="Paste the full text here"></textarea>
+        <div id="timer"></div>
+    </div>
+    <input type="text" id="user-input" placeholder="Start typing here" onfocus="startTimer = true">
+    <div>
+        <input type="button" id="restart-btn" value="RESTART" onClick="window.location.reload()">
+    </div>
+    <div id="results"></div>
+    <script src="js/typeracer.js"></script>
+</body>
+
+</html>
